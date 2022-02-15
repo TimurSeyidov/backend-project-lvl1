@@ -2,7 +2,7 @@
 /* eslint no-eval: 0 */
 import { Game, getNumber } from '../src/index.js';
 
-const game = new Game('What is the result of the expression?', 3, true);
+const game = new Game('What is the result of the expression?');
 game.setQuestion(() => {
   const getZnak = () => {
     const items = ['+', '-', '*'];

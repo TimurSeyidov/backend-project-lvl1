@@ -1,10 +1,18 @@
 import readlineSync from 'readline-sync';
 
 class Game {
-  constructor(description, count = 3, useTryAgain = false) {
+  constructor(description) {
     this.description = description;
+    this.count = 3;
+    this.useTryAgain = true;
+  }
+
+  setCount(count) {
     this.count = count;
-    this.useTryAgain = useTryAgain;
+  }
+
+  setShowTryAgain(value) {
+    this.useTryAgain = Boolean(value);
   }
 
   setQuestion(question) {
@@ -42,8 +50,8 @@ class Game {
 }
 
 const getNumber = (max) => {
-  let res = null;
-  while (!res) {
+  let res = 0;
+  while (res <= 0) {
     res = Math.floor(Math.random() * max);
   }
   return res;

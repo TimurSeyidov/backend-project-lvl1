@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Game, getNumber } from '../src/index.js';
 
-const game = new Game('What number is missing in the progression?', 3, true);
+const game = new Game('What number is missing in the progression?');
 game.setQuestion(() => {
   let start = getNumber(20);
   const step = getNumber(10);

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Game, getGcd, getNumber } from '../src/index.js';
 
-const game = new Game('Find the greatest common divisor of given numbers.', 3, true);
+const game = new Game('Find the greatest common divisor of given numbers.');
 game.setQuestion(() => {
   let a = getNumber(100);
   let b = getNumber(100);
