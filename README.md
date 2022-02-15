@@ -5,12 +5,13 @@
 
 ### Install project
 View [videoscreen](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw)
+
 Run commands
 
 *   `git clone https://github.com/TimurSeyidov/backend-project-lvl1`
 *   `make install`
 *   `sudo npm link`
-###Run game 'brain-even'
+### Run game 'brain-even'
 View [videoscreen](https://asciinema.org/a/q2nEmxRUhfvG1HcPMNdm9OfJx)
 
 - Install project
