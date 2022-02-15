@@ -1,53 +1,26 @@
 import readlineSync from 'readline-sync';
 
-class Game {
-  constructor(description) {
-    this.description = description;
-    this.count = 3;
-    this.useTryAgain = true;
-  }
-
-  setCount(count) {
-    this.count = count;
-  }
-
-  setShowTryAgain(value) {
-    this.useTryAgain = Boolean(value);
-  }
-
-  setQuestion(question) {
-    this.question = question;
-  }
-
-  setWrong(wrongCallback) {
-    this.wrongCallback = wrongCallback;
-  }
-
-  run() {
-    console.log('Welcome to the Brain Games!');
-    this.name = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${this.name}`);
-    console.log(this.description);
-    if (typeof this.question === 'function') {
-      for (let i = 0; i < this.count; i += 1) {
-        const [q, a] = this.question();
-        console.log(`Question: ${q}`);
-        const answer = readlineSync.question('Your answer: ');
-        if (a === answer) {
-          console.log('Correct!');
-        } else {
-          if (typeof this.wrongCallback === 'function') {
-            this.wrongCallback(a, answer);
-          }
-          if (this.useTryAgain) {
-            console.log(`Let's try again, ${this.name}!`);
-          }
-        }
+const game = (description, question) => {
+  const GAME_COUNT = 3;
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}`);
+  console.log(description);
+  if (typeof question === 'function') {
+    for (let i = 0; i < GAME_COUNT; i += 1) {
+      const [q, a] = question();
+      console.log(`Question: ${q}`);
+      const answer = readlineSync.question('Your answer: ');
+      if (a === answer) {
+        console.log('Correct!');
+      } else {
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${a}'.`);
+        console.log(`Let's try again, ${name}!`);
       }
     }
-    console.log(`Congratulations, ${this.name}!`);
   }
-}
+  console.log(`Congratulations, ${name}!`);
+};
 
 const getNumber = (max) => {
   let res = 0;
@@ -64,4 +37,4 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
-export { Game, getNumber, getGcd };
+export { game, getNumber, getGcd };

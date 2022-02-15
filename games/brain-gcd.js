@@ -1,18 +1,18 @@
-#!/usr/bin/env node
-import { Game, getGcd, getNumber } from '../src/index.js';
+import { game, getGcd, getNumber } from '../src/index.js';
 
-const game = new Game('Find the greatest common divisor of given numbers.');
-game.setQuestion(() => {
-  let a = getNumber(100);
-  let b = getNumber(100);
-  while (getGcd(a, b) === 1) {
-    a = getNumber(100);
-    b = getNumber(100);
-  }
-  const question = `${a} ${b}`;
-  return [question, getGcd(a, b).toString()];
-});
-game.setWrong((answer, userAnswer) => {
-  console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
-});
-game.run();
+const gameGcd = () => {
+  const description = 'Find the greatest common divisor of given numbers.';
+  const question = () => {
+    let a = getNumber(100);
+    let b = getNumber(100);
+    while (getGcd(a, b) === 1) {
+      a = getNumber(100);
+      b = getNumber(100);
+    }
+    const q = `${a} ${b}`;
+    return [q, getGcd(a, b).toString()];
+  };
+  return game(description, question);
+};
+
+export default gameGcd;
