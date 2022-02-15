@@ -11,4 +11,4 @@ publish:
 lint:
 	npx eslint .
 link:
-	sudo npm link
+	sudo npm link --force
