@@ -14,7 +14,7 @@ const game = (description, question) => {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${a}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
-    } 
+    }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
