@@ -8,12 +8,12 @@ const gameProgression = () => (
     const numbers = [];
     let answer;
     for (let i = 1; i <= 10; i += 1) {
+      let push = start;
       if (i === exlcude) {
         answer = start;
-        numbers.push('..');
-      } else {
-        numbers.push(start);
+        push = '..';
       }
+      numbers.push(push);
       start += step;
     }
     return [numbers.join(' '), answer.toString()];
