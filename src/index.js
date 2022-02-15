@@ -6,19 +6,16 @@ const game = (description, question) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   console.log(description);
-  if (typeof question === 'function') {
-    for (let i = 0; i < GAME_COUNT; i += 1) {
-      const [q, a] = question();
-      console.log(`Question: ${q}`);
-      const answer = readlineSync.question('Your answer: ');
-      if (a === answer) {
-        console.log('Correct!');
-      } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${a}'.`);
-        console.log(`Let's try again, ${name}!`);
-        return;
-      }
-    }
+  for (let i = 0; i < GAME_COUNT; i += 1) {
+    const [q, a] = question();
+    console.log(`Question: ${q}`);
+    const answer = readlineSync.question('Your answer: ');
+    if (a !== answer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${a}'.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
+    } 
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
 };
