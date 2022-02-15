@@ -1,5 +1,7 @@
 install: #install packages
 	npm ci
+start: #run games
+	node bin/brain-start.js
 brain-games: #run game
 	node bin/brain-games.js
 brain-even: #run even

@@ -1,35 +1,49 @@
 ### Hexlet tests and linter status:
-[![Maintainability](https://api.codeclimate.com/v1/badges/c8cf29a287e3612941c2/maintainability)](https://codeclimate.com/github/TimurSeyidov/backend-project-lvl1/maintainability)
-[![Actions Status](https://github.com/TimurSeyidov/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/TimurSeyidov/backend-project-lvl1/actions)
-[![Actions Status](https://github.com/TimurSeyidov/backend-project-lvl1/workflows/user-check/badge.svg)](https://github.com/TimurSeyidov/backend-project-lvl1/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c8cf29a287e3612941c2/maintainability)](https://codeclimate.com/github/TimurSeyidov/backend-project-lvl1/maintainability) [![Actions Status](https://github.com/TimurSeyidov/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/TimurSeyidov/backend-project-lvl1/actions) [![Actions Status](https://github.com/TimurSeyidov/backend-project-lvl1/workflows/user-check/badge.svg)](https://github.com/TimurSeyidov/backend-project-lvl1/actions)
 
-### Install project
+### Brain Games
+Проект **brain games** представляет из себя набор мини-игр.
+
+###Требования к установке
+- установленный Node.js версии не ниже 11
+- наличие git-клиента
+
+### Установка
 View [videoscreen](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw)
 
-Run commands
+Выполните комманды
 
 *   `git clone https://github.com/TimurSeyidov/backend-project-lvl1`
 *   `make install`
-*   `sudo npm link`
+*   `make link`
 
-Before runing games please install project
+[![asciicast](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw.png)](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw)
 
-### Run game 'brain-even'
-View [videoscreen](https://asciinema.org/a/q2nEmxRUhfvG1HcPMNdm9OfJx)
-- Run `brain-even`
+### Запуск игр
 
-### Run game 'brain-calc'
-View [videoscreen](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw)
-- Run `brain-calc`
+Игры можно запускать как по отдельности, так и через основное меню.
+Для выбора игры запустите `brane-start`
 
-### Run game 'brain-gcd'
-View [videoscreen](https://asciinema.org/a/JhnC73enzngeJF9ykxFZXcXE9)
-- Run `brain-gcd`
+#### Игра 'Проверка на чётность'
 
-### Run game 'brain-progression'
-View [videoscreen](https://asciinema.org/a/k79ScngiFLiTgYeorf2YyvaJD)
-- Run `brain-progression`
+В игре нужно угадывать, четное число или нет
+Для запуска игры запустите `brane-even`
 
-### Run game 'brain-prime'
-View [videoscreen](https://asciinema.org/a/g0nDdRCuoT8GbQWmowqPCOPH0)
-- Run `brain-prime`
+### Игра 'Калькулятор'
+
+В игре нужно посчитать результат математических операций
+Для запуска игры запустите `brane-calc`
+
+### Игра 'НОД'
+
+В игре нужно найти наибольший общий делитель
+Для запуска игры запустите `brane-gcd`
+
+### Игра 'Арифметическая прогрессия'
+
+В игре нужно найти пропущенное число
+Для запуска игры запустите `brane-progression`
+
+### Игра 'Простое ли число?'
+В игре нужно определить, является ли число простым
+Для запуска игры запустите `brane-prime`
