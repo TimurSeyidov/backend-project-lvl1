@@ -23,3 +23,8 @@ View [videoscreen](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw)
 - Install project
 - Run `brain-calc`
 
+### Run game 'brain-gcd'
+View [videoscreen](https://asciinema.org/a/JhnC73enzngeJF9ykxFZXcXE9)
+
+- Install project
+- Run `brain-gcd`
