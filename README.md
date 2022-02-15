@@ -11,26 +11,25 @@ Run commands
 *   `git clone https://github.com/TimurSeyidov/backend-project-lvl1`
 *   `make install`
 *   `sudo npm link`
+
+Before runing games please install project
+
 ### Run game 'brain-even'
 View [videoscreen](https://asciinema.org/a/q2nEmxRUhfvG1HcPMNdm9OfJx)
-
-- Install project
 - Run `brain-even`
 
 ### Run game 'brain-calc'
 View [videoscreen](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw)
-
-- Install project
 - Run `brain-calc`
 
 ### Run game 'brain-gcd'
 View [videoscreen](https://asciinema.org/a/JhnC73enzngeJF9ykxFZXcXE9)
-
-- Install project
 - Run `brain-gcd`
 
 ### Run game 'brain-progression'
 View [videoscreen](https://asciinema.org/a/k79ScngiFLiTgYeorf2YyvaJD)
-
-- Install project
 - Run `brain-progression`
+
+### Run game 'brain-prime'
+View [videoscreen](https://asciinema.org/a/g0nDdRCuoT8GbQWmowqPCOPH0)
+- Run `brain-prime`
