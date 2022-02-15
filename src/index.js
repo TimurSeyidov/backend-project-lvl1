@@ -41,7 +41,13 @@ class Game {
   }
 }
 
-const getNumber = (max) => Math.floor(Math.random() * max);
+const getNumber = (max) => {
+  let res = null;
+  while (!res) {
+    res = Math.floor(Math.random() * max);
+  }
+  return res;
+};
 
 const getGcd = (a, b) => {
   if (!b) {
