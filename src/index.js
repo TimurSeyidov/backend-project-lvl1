@@ -17,7 +17,7 @@ class Game {
 
   run() {
     console.log('Welcome to the Brain Games!');
-    this.name = this.read('May I have your name?');
+    this.name = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${this.name}`);
     console.log(this.description);
     if (typeof this.question === 'function') {
