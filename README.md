@@ -28,3 +28,9 @@ View [videoscreen](https://asciinema.org/a/JhnC73enzngeJF9ykxFZXcXE9)
 
 - Install project
 - Run `brain-gcd`
+
+### Run game 'brain-progression'
+View [videoscreen](https://asciinema.org/a/k79ScngiFLiTgYeorf2YyvaJD)
+
+- Install project
+- Run `brain-progression`
