@@ -43,4 +43,11 @@ class Game {
 
 const getNumber = (max) => Math.floor(Math.random() * max);
 
-export { Game, getNumber };
+const getGcd = (a, b) => {
+  if (!b) {
+    return a;
+  }
+  return getGcd(b, a % b);
+};
+
+export { Game, getNumber, getGcd };
