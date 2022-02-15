@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const getName = (question) => {
-    return readlineSync.question(`${question} `);
-}
+const getName = (question) => readlineSync.question(`${question} `);
 
-export { getName }
+export default getName;
