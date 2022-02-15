@@ -3,7 +3,7 @@
 [![Actions Status](https://github.com/TimurSeyidov/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/TimurSeyidov/backend-project-lvl1/actions)
 [![Actions Status](https://github.com/TimurSeyidov/backend-project-lvl1/workflows/user-check/badge.svg)](https://github.com/TimurSeyidov/backend-project-lvl1/actions)
 
-###Install project
+### Install project
 View [videoscreen](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw)
 Run commands
 
@@ -16,7 +16,7 @@ View [videoscreen](https://asciinema.org/a/q2nEmxRUhfvG1HcPMNdm9OfJx)
 - Install project
 - Run `brain-even`
 
-###Run game 'brain-calc'
+### Run game 'brain-calc'
 View [videoscreen](https://asciinema.org/a/rocLSpARWMuBh9RnirKB2Apyw)
 
 - Install project
